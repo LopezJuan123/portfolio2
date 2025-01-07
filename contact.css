@@ -1,0 +1,248 @@
+
+body {
+    margin: 0;
+    font-family: "Inter", serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+.background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Sends it behind all other content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-with-lines {
+            position: relative;
+        }
+
+.circle {
+            width: 925px; /* Diameter of the circle */
+            height: 925px; /* Diameter of the circle */
+            border: 1px solid #dee2e6; /* Outline thickness and color */
+            border-radius: 50%; /* Makes it a circle */
+            background-color: transparent; /* Transparent inside */
+            position: fixed;
+            margin-left: 400px;
+            z-index: -1;
+        }
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.header {
+    padding: 20px ;
+
+}
+/* Logo section Start */
+
+.logo img {
+   max-width: 200px; /* Adjust size as needed */
+   height: auto; /* Maintain aspect ratio */
+   display: block; /* Ensures proper alignment */
+
+}
+
+/* Logo section Finish */
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/* Section Tabs Project, About, Contact */
+.nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+
+}
+/* Section Tabs Project, About, Contact Finish*/
+
+/* LinkedIn Start */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+
+.social-icons a img {
+    width: 20px; /* Adjust icon size */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* LinkedIn Finish */
+
+/* Hover Over Tabs Start */
+.nav ul li a:hover {
+color: #adb5bd;
+position: relative;
+padding-bottom: 10px;
+text-decoration: none;
+}
+
+a::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+border-radius: 0px;
+background-color: #adb5bd;
+bottom: 0;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .5s ease-in-out;
+}
+
+a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+
+
+
+/* Hover Over Tabs Finish */
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #0d1b2a;
+    font-weight: 200;
+    text-align: Left;
+    padding: 10px 20px;
+
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Contact Container */
+
+
+/* Contact Details Section */
+
+
+.contact-details h2 {
+    margin-top: 25px;
+    margin-left: 150px;
+    font-size: 24px;
+
+}
+
+.contact-details p {
+    font-size: 18px;
+    color: #495057;
+    margin: 10px 0;
+    margin-left: 165px;
+}
+
+.contact-details a {
+    color: #0d1b2a;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+/* Resume Display Section */
+
+
+.resume-display h2 {
+    margin-top: -175px ;
+    margin-left: 500px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #495057;
+}
+
+embed{
+  margin-top: 25px;
+  margin-left: 500px;
+}
+
+.contact-container {
+    margin-bottom: 100px; /* Add space to avoid overlapping with footer */
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #f8f9fa 50%, #e9ecef 20%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: Left;
+    padding: 20px 0;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.footer p {
+    margin: 10;
+    font-size: 14px;
+}

@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    font-family: "Inter", serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+.background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Sends it behind all other content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-with-lines {
+            position: relative;
+        }
+
+.circle {
+            width: 925px; /* Diameter of the circle */
+            height: 925px; /* Diameter of the circle */
+            border: 1px solid #dee2e6; /* Outline thickness and color */
+            border-radius: 50%; /* Makes it a circle */
+            background-color: transparent; /* Transparent inside */
+            position: fixed;
+            margin-left: 400px;
+            z-index: -1;
+        }
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+
+}
+.container1 p{
+  font-weight: 200;
+}
+
+.header {
+    padding: 20px ;
+
+}
+/* Logo section Start */
+
+.logo img {
+   max-width: 200px; /* Adjust size as needed */
+   height: auto; /* Maintain aspect ratio */
+   display: block; /* Ensures proper alignment */
+
+}
+
+/* Logo section Finish */
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/* Section Tabs Project, About, Contact */
+.nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+
+}
+/* Section Tabs Project, About, Contact Finish*/
+
+/* LinkedIn Start */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+
+.social-icons a img {
+    width: 20px; /* Adjust icon size */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* LinkedIn Finish */
+
+/* Hover Over Tabs Start */
+.nav ul li a:hover {
+color: #adb5bd;
+position: relative;
+padding-bottom: 10px;
+text-decoration: none;
+}
+
+a::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+border-radius: 0px;
+background-color: #adb5bd;
+bottom: 0;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .5s ease-in-out;
+}
+
+a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+
+}
+
+/* Hover Over Tabs Finish */
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #0d1b2a;
+    font-weight: 200;
+    text-align: Left;
+    padding: 10px 20px;
+
+}
+
+/* Hello, Im Juan Section */
+.hero h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 50px;
+    transform: translateX(-100%);
+            animation: reveal 1.5s cubic-bezier(0.90, 0, 0.175, 1) forwards;
+            opacity: 0; /* Initially invisible */
+            animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards,
+                       fade 1.5s ease-in forwards;
+}
+@keyframes reveal {
+           0% {
+               transform: translateY(-20%);
+           }
+           100% {
+               transform: translateX(0);
+           }
+       }
+       @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+/* */
+ .hero  p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    transform: translateX(-100%);
+            animation: reveal 1.5s cubic-bezier(0.90, 0, 0.175, 1) forwards;
+            opacity: 0; /* Initially invisible */
+            animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards,
+                       fade 1.5s ease-in forwards;
+    }
+    @keyframes reveal {
+           0% {
+               transform: translateY(-20%);
+           }
+           100% {
+               transform: translateX(0);
+           }
+       }
+       @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+}
+/*
+.hero .btn {
+    background: #f4b41a;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #333;
+    color: #fff;
+}
+*/
+.about, .services {
+    padding: 30px 20px;
+    text-align: left;
+
+}
+
+.about h2, .services h2  {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #dee2e6;
+    transform: rotate(90deg); /* Rotate the header 90 degrees to the left */
+    transform-origin: left center; /* Adjust the rotation pivot point */
+    position: fixed; /* Positioning if you want it fixed somewhere */
+    left: 40; /* Adjust placement as needed */
+    top: 33%; /* Center vertically */
+
+
+}
+
+.about p, .services .service p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+
+
+/* First Project display*/
+
+
+  .projects-section {
+      max-width: 1000px;
+      margin: 0 auto;
+
+  }
+
+  .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+  }
+  .project img {
+      max-width: 100%;
+      border-radius: 8px;
+  }
+
+
+  .project img {
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    argin-left: 30px; /* Adds spacing between text and image */
+    flex-shrink: 0; /* Prevents image from shrinking */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    opacity: 1;
+      transition: opacity 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+    opacity: 0.5;
+    cursor: ne-resize;
+
+}
+
+  .project-content {
+      text-align: left;
+      margin-top: 20px;
+
+  }
+  .project-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 38px;
+      color: #333;
+      padding-right: 200px ;
+      margin: 0px;
+  }
+
+  .line1 {
+            width: 30%;
+            height: 2px;
+            background-color: #000;
+            margin: 0  10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+        }
+
+  .project-description {
+      font-size: 18px;
+      color: #667;
+      margin: 10px 0 0;
+
+  }
+  .view-project {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      cursor: ne-resize;
+      text-decoration: none;
+  }
+
+  .view-project:hover {
+      color: #adb5bd;
+  }
+
+  @media (min-width: 600px) {
+      .project {
+          flex-direction:row;
+          text-align: left;
+      }
+      .project img {
+          max-width: 700px;
+          margin-left: 100px;
+      }
+      .project-content {
+          margin-top: 0;
+      }
+      .animated-image {
+    width: 100%;
+    height: auto;
+    animation: moveInOut 4s ease-in-out infinite;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #f8f9fa 50%, #e9ecef 20%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: Left;
+    padding: 20px 0;
+    margin-top: 400px;
+    position: relative;
+
+}
+
+.footer p {
+    margin: 10;
+    font-size: 14px;
+}

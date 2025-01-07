@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    font-family: "Inter", serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+.background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Sends it behind all other content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+  .circle-with-lines {
+      position: relative;
+  }
+/* circle item Start */
+.circle {
+      width: 925px; /* Diameter of the circle */
+      height: 925px; /* Diameter of the circle */
+      border: 1px solid #dee2e6; /* Outline thickness and color */
+      border-radius: 50%; /* Makes it a circle */
+      background-color: transparent; /* Transparent inside */
+      position: fixed;
+      margin-left: 400px;
+      z-index: -1;
+  }
+  /* circle item End */
+  /* Header item Start */
+  .header {
+      padding: 20px ;
+
+  }
+  .container {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      max-width: 1400px;
+      margin: 0 auto;
+
+  }
+  .container1 a {
+    font-size: 18px;
+    font-weight: 450;
+    text-decoration: none;
+    color:#0d1b2a;
+
+  }
+  .container1{
+    padding-top: 50px;
+    padding-left: 165px;
+  }
+  /* Logo section Start */
+
+  .logo img {
+     max-width: 200px; /* Adjust size as needed */
+     height: auto; /* Maintain aspect ratio */
+     display: block; /* Ensures proper alignment */
+
+  }
+
+  /* Logo section Finish */
+
+  .nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .nav ul li {
+      margin-left: 20px;
+      margin-top: 5px;
+  }
+  /* Section Tabs Project, About, Contact */
+  .nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s;
+
+  }
+  /* Section Tabs Project, About, Contact Finish*/
+
+  /* LinkedIn Start */
+  .social-icons {
+      position: absolute;
+      top: 20px;
+      right: 250px;
+  }
+
+  .social-icons a img {
+      width: 20px; /* Adjust icon size */
+      height: auto;
+      transition: transform 0.3s;
+  }
+
+  .social-icons a img:hover {
+      transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+
+  /* LinkedIn Finish */
+
+
+
+
+  /* Hover Over Tabs Start */
+  .nav ul li a:hover {
+  color: #adb5bd;
+  position: relative;
+  padding-bottom: 10px;
+  text-decoration: none;
+  }
+
+  a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 0px;
+  background-color: #adb5bd;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s ease-in-out;
+  }
+
+  a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  }
+
+
+  }
+
+  /* Hover Over Tabs Finish */
+
+  .hero {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      color: #0d1b2a;
+      font-weight: 200;
+      text-align: Left;
+      padding: 10px 20px;
+
+  }
+/* Project main title and subtitle Start/img */
+      .project-container {
+      text-align: center;
+      max-width: 1000px;
+      padding: 20px;
+  }
+
+  .project-title {
+      white-space: nowrap;
+      font-size: 70px;
+      font-weight: 700;
+      padding-left: 650px;
+      color: #333;
+  }
+
+  .project-subtitle {
+      white-space: nowrap;
+      font-size: 24px;
+      font-weight: 400;
+      font-weight: 200;
+      padding-left: 425px;
+      margin-top: -50px;
+      color: #555;
+  }
+
+
+  .project-image {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      padding-left: 350px;
+      margin-top: -10px;
+  }
+
+/* Project main title and subtitle/img End */
+.project-container2 h1 {
+text-align: Left;
+max-width: 1000px;
+padding-top: 100px;
+padding-left: 325px;
+color: #0d1b2a;
+}
+
+
+
+.project-container2 p {
+text-align: Left;
+max-width: 1100px;
+padding-left: 325px;
+font-weight: 300;
+color: #0d1b2a;
+}
+.project-container2 a{
+  font-size: 23px;
+  color: #4895ef;
+  padding-left: 1300px;
+  height: 100px;
+  width:100px;
+  text-decoration: none;
+}
+
+.content-container {
+display: flex;
+justify-content: space-evenly;
+gap: 20px; /* Space between blocks */
+width: 80%;
+max-width: 1200px;
+padding-left: 350px;
+}
+
+
+
+.content-title {
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 10px;
+color: #333;
+
+}
+
+.content-description {
+font-size: 18px;
+font-weight: 300;
+color: #555;
+line-height: 1.5;
+}
+
+
+/* These lines are for the problem, solution, my role and scope*/
+.line1 {
+    width: 30%;
+    height: 2px;
+    background-color: #000;
+    margin: 0  10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+/* Problem and description End */
+
+/* title and image start*/
+.content-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 80%;
+max-width: 1200px;
+padding-top: 100px;
+padding-left: 300px;
+
+}
+.content-row2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 80%;
+max-width: 1500px;
+padding-top: 100px;
+padding-left: 300px;
+
+}
+.text-content {
+flex: 1;
+padding: 20px;
+text-align: left;
+}
+
+.content-title {
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 10px;
+color: #333;
+}
+
+
+
+
+.content-description {
+font-size: 18px;
+color: #555;
+line-height: 1.5;
+}
+
+.image-content {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.image-content img {
+max-width: 100%;
+height: auto;
+}
+
+.image-right {
+flex-direction:row; /* Default: Image on the right */
+}
+
+.image-left {
+flex-direction: row; /* Flips the order: Image on the left */
+}
+
+/* Modal Styling */
+.modal {
+display: none; /* Hidden by default */
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+display: block;
+margin: auto;
+max-width: 90%;
+max-height: 90%;
+border-radius: 10px;
+}
+
+.close {
+position: absolute;
+top: 20px;
+right: 40px;
+color: #fff;
+font-size: 30px;
+font-weight: normal;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+.image-content {
+max-width: 100%;
+border-radius: 8px;
+transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+opacity: 1;
+transition: opacity 0.3s;
+}
+
+.image-content:hover {
+transform: scale(1.1); /* Scale up by 10% on hover */
+opacity: 0.5;
+cursor: ne-resize;
+
+}
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #f8f9fa 50%, #e9ecef 20%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+
+  .footer {
+      background: #000;
+      color: #fff;
+      text-align: Left;
+      padding: 20px 0;
+      margin-top: 400px;
+      position: relative;
+
+  }
+
+  .footer p {
+      margin: 10;
+      font-size: 14px;
+  }
